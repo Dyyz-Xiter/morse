@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyyz Morse Player</title>
+    <link rel="stylesheet" href="morse.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dyyz Morse Player</h1>
+
+        <label class="label">Tone (Hz):</label>
+        <input type="number" id="tone" value="800">
+
+        <label class="label">Speed (WPM):</label>
+        <input type="number" id="speed" value="20">
+
+        <label class="label">Volume (%):</label>
+        <input type="number" id="volume" value="50">
+
+        <label class="label">Type text here:</label>
+        <textarea id="textInput" placeholder="Enter text..."></textarea>
+
+        <div class="button-group">
+            <button onclick="playMorse()">Play</button>
+            <button onclick="pauseMorse()">Pause</button>
+            <button onclick="resumeMorse()">Resume</button>
+            <button onclick="restartMorse()">Restart</button>
+            <button onclick="downloadMorseAsMP3()">Download MP3</button>
+        </div>
+
+        <label class="label">Morse Encoded Output:</label>
+        <textarea id="morseOutput" readonly></textarea>
+    </div>
+
+    <script src="morse.js"></script>
+</body>
+</html>

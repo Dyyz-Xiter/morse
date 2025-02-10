@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: yellow;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 60px auto; /* Tambah jarak dari atas */
+    padding: 15px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px red;
+}
+
+h1 {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.label {
+    font-weight: bold;
+    color: yellow;
+    margin-top: 10px;
+    display: block;
+}
+
+input, textarea {
+    width: 90%;
+    max-width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+textarea {
+    height: 50px; /* Kecilkan tinggi textarea */
+    resize: none;
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkred;
+}
